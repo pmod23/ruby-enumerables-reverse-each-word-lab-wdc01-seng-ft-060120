@@ -1,7 +1,7 @@
 def reverse_each_word(str)
  
- 
-     str.split(" ").collect do |e|
+ arr = str.split(" ")
+    arr.collect do |e|
       word = ""
       e.split("").each do |c|
         word = c + word
@@ -10,5 +10,5 @@ def reverse_each_word(str)
       
       
  end
- str.join.chop
+ arr.join.chop
 end
