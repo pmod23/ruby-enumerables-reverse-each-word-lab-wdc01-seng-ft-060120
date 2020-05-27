@@ -1,14 +1,14 @@
 def reverse_each_word(str)
  
- new_str = ""
-     str.split(" ").each do |e|
+ 
+     str.split(" ").collect do |e|
       word = ""
       e.split("").each do |c|
         word = c + word
       end
-      new_str= new_str+word + " "
+      word + " "
       
       
  end
- new_str.chop
+ str.join().chop
 end
